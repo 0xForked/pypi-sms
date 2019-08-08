@@ -1,4 +1,5 @@
-#!/usr/bin/env python
+#! /usr/bin/python3
+
 from ttyUSB0Sender import Sender
 
 class Message:
