@@ -26,7 +26,6 @@ class Sender:
         self.ser.write('''AT+CMGS="'''.encode() + self.recipient.encode() + '''"\r\n'''.encode())
         time.sleep(1)
         self.ser.write(self.content.encode() + '\r\n'.encode())
-        time.sleep(1)
         msg = self.ser.write(chr(26).encode())
         return msg
  
